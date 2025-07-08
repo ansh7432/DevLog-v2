@@ -37,7 +37,7 @@ export function Footer() {
           </span>
         </button>
         <button
-          onClick={() => window.open("https://drive.google.com/file/d/142tL7NLPg8OEkKIwczCAqO03If6a4HEa/view?usp=sharing", "_blank")}
+          onClick={() => window.open("https://drive.google.com/file/d/17eS98OFYeP8RQm1XeuCtXD-918KXNG9L/view?usp=sharing", "_blank")}
           className="px-12 py-4 rounded-full relative bg-slate-700 text-white text-lg hover:shadow-2xl hover:shadow-white/[0.1] transition duration-200 border border-slate-600"
         >
           <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />

@@ -33,7 +33,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://drive.google.com/file/d/142tL7NLPg8OEkKIwczCAqO03If6a4HEa/view?usp=sharing",
+      href: "https://drive.google.com/file/d/17eS98OFYeP8RQm1XeuCtXD-918KXNG9L/view?usp=sharing",
     },
  
    

@@ -4,13 +4,14 @@ import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { FiLink } from "react-icons/fi";
 import Image from "next/image";
-import Photo from "./image copy 5.png";
+import Photo from "../../public/Screenshot 2025-07-08 at 10.30.55 PM.png"
+
 import {
   SiTypescript,
-  SiGraphql,
-  SiDocker,
-  SiPrisma,
-  SiReact,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTailwindcss,
+  SiPaypal,
   SiGithub,
 } from "react-icons/si";
 
@@ -24,8 +25,8 @@ export default function FourthProject() {
         ) : (
           <div className="h-full w-full relative rounded-lg overflow-hidden">
             <Image
-              src={Photo} // Add your image to the public folder
-              alt="Inkwell Project Screenshot"
+              src={Photo}// Kommercio screenshot from public folder
+              alt="Kommercio Project Screenshot"
               fill
               className="object-cover"
               priority
@@ -34,14 +35,15 @@ export default function FourthProject() {
         )}
       </CardSkeletonContainer>
       <div className="flex flex-col items-center justify-center text-center mt-4">
-        <CardTitle>Quizzify</CardTitle>
+        <CardTitle>Kommercio</CardTitle>
         <CardDescription>
-          Engineered a dynamic & interactive Quiz App using cutting-edge Kotlin
-          to deliver seamless user experience.
+          Built a full-stack e-commerce platform with shopping cart, vendor dashboard, and secure checkout.
+          Developed RESTful APIs using FastAPI and PostgreSQL with JWT-based authentication and role-based access.
+          Integrated PayPal for payments and achieved 99.9% uptime with sub-200ms API response times.
         </CardDescription>
         <div className="flex gap-3 mt-3">
           <a
-            href="https://github.com/ansh7432/Quizify"
+            href="https://github.com/ansh7432/Kommercio"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all"
@@ -49,7 +51,7 @@ export default function FourthProject() {
             <SiGithub className="text-lg dark:text-white" />
           </a>
           <a
-            href="https://github.com/ansh7432/Quizify"
+            href="https://kommercio.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full p-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all"
@@ -63,17 +65,16 @@ export default function FourthProject() {
 }
 
 const Skeleton = () => {
-  const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-  const sequence = [
-    [".circle-1", { scale, transform }, { duration: 0.8 }],
-    [".circle-2", { scale, transform }, { duration: 0.8 }],
-    [".circle-3", { scale, transform }, { duration: 0.8 }],
-    [".circle-4", { scale, transform }, { duration: 0.8 }],
-    [".circle-5", { scale, transform }, { duration: 0.8 }],
-  ];
-
   useEffect(() => {
+    const scale = [1, 1.1, 1];
+    const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
+    const sequence = [
+      [".circle-1", { scale, transform }, { duration: 0.8 }],
+      [".circle-2", { scale, transform }, { duration: 0.8 }],
+      [".circle-3", { scale, transform }, { duration: 0.8 }],
+      [".circle-4", { scale, transform }, { duration: 0.8 }],
+      [".circle-5", { scale, transform }, { duration: 0.8 }],
+    ];
     // @ts-expect-error: Allowing assignment of a string to a number for testing purposes
     animate(sequence, {});
   }, []);
@@ -84,16 +85,16 @@ const Skeleton = () => {
           <SiTypescript className="h-3 w-3" />
         </Container>
         <Container className="h-10 w-10 circle-2">
-          <SiDocker className="h-5 w-5 dark:text-white" />
+          <SiNextdotjs className="h-5 w-5 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <SiGraphql className="h-6 w-6 dark:text-white" />
+          <SiPostgresql className="h-6 w-6 dark:text-white" />
         </Container>
         <Container className="h-10 w-10 circle-4">
-          <SiPrisma className="h-5 w-5" />
+          <SiTailwindcss className="h-5 w-5" />
         </Container>
         <Container className="h-8 w-8 circle-8">
-          <SiReact className="h-3 w-3" />
+          <SiPaypal className="h-3 w-3" />
         </Container>
       </div>
 

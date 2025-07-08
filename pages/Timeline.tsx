@@ -5,6 +5,22 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const experienceData = [
     {
+      title: "January 2025 – Present",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            <span className="font-bold">Kubestellar UI Remote</span> - Open Source Contributor
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            <span className="font-bold">Golang Plugin Development:</span> Developed a cluster management plugin in Golang for automated cluster detaching and onboarding workflows, streamlining multi-cluster Kubernetes operations.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-xl font-normal mb-4">
+            <span className="font-bold">Full Stack Contributions:</span> Contributed <span className="font-bold">15+ pull requests</span> across frontend and backend, enhancing API integrations and resolving critical bugs in production environment.
+          </p>
+        </div>
+      ),
+    },
+    {
       title: "August-October 2024",
       content: (
         <div>
